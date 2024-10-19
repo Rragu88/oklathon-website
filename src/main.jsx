@@ -8,11 +8,16 @@ import {
 } from "react-router-dom";
 import { AboutPage } from './pages/About.jsx';
 import { ChakraProvider } from '@chakra-ui/react';
+import { Resources } from './pages/Resources.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <AboutPage/>,
+  },
+  {
+    path: "/resources",
+    element: <Resources/>
   }
 ]);
 
