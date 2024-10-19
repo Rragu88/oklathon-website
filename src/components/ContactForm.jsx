@@ -22,7 +22,7 @@ export const ContactForm = () =>{
     
       return (
         <>
-        <Text fontSize='4xl' as='b' align='left' >Contact Us</Text> 
+        <Text fontSize={{sm:'2xl',md:'4xl'}} as='b' align='left' >Contact Us</Text> 
 
         {isMissingFields?  (
         <Alert status="warning" mb={4}>
@@ -35,7 +35,7 @@ export const ContactForm = () =>{
           Please input the correct email!
         </Alert> ):null}
         <Box display="flex" justifyContent="center" alignItems="center">
-            <Box minW='550px' p={5}  borderRadius="md" boxShadow="lg">
+            <Box width='550px' p={5}  borderRadius="md" boxShadow="lg">
                 <FormControl mb={4} isRequired>
                 <FormLabel>Name</FormLabel>
                 <Input name="name" value={formData.name} onChange={handleChange} />
