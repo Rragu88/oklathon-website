@@ -11,6 +11,14 @@ import {
     List,
     ListItem,
     UnorderedList,
+    OrderedList,
+    Accordion,
+    AccordionItem,
+    AccordionButton,
+    AccordionPanel,
+    AccordionIcon,
+    Box,
+    Text
   } from '@chakra-ui/react'
 
 export const Resources=() => {
@@ -22,7 +30,7 @@ export const Resources=() => {
         flexDir="column"
         >
             <h1>
-                Basic Resources Page
+                Resources Page
             </h1>
             <h3>
                 Oklathon supports coders of all skill levels! Need to polish your skills ahead of the event? Here are some links to get you started. 
@@ -93,7 +101,154 @@ export const Resources=() => {
                     </TabPanel>
                 </TabPanels>
             </Tabs>
-            
+            <Accordion allowToggle="true">
+                <AccordionItem>
+                    <h2>
+                        <AccordionButton>
+                        <Box as='span' flex='1' textAlign='left'>
+                            Techlahoma Code of Conduct
+                        </Box>
+                        <AccordionIcon />
+                        </AccordionButton>
+                    </h2>
+                    <AccordionPanel pb={4}>
+                        <Text textAlign="left">All attendees of in-person events and online gatherings are expected to follow our Code of Conduct, which includes our anti-harassment policy. The COC holds attendees to regard themselves in a professional and collaborative manner while engaging in any Techlahoma activity. If you need help with a COC violation or require any immediate assistance, consider following any of these steps below:</Text>
+                        <OrderedList>
+                            <ListItem>
+                                <Text textAlign="left">Contact police if needed</Text>
+                            </ListItem>
+                            <ListItem>
+                                <Text textAlign="left">Contact your event organizers right away</Text>
+                            </ListItem>
+                            <ListItem>
+                                <Text textAlign="left">Fill out an <Link href="https://www.techlahoma.org/incident/" color="teal.500" target="_blank">incident report</Link> form to have your issue reviewed immediately.</Text>
+                            </ListItem>
+                            <ListItem>
+                                <Text textAlign="left">Join and post in the public Techlahoma Slack channel #ask-a-mod to contact all admins</Text>
+                            </ListItem>
+                            <ListItem>
+                                <Text textAlign="left">Contact all Slack admins in any channel by typing @admins</Text>
+                            </ListItem>
+                            <ListItem>
+                                <Text textAlign="left">Contact all Conduct Committee representatives by typing @conduct</Text>
+                            </ListItem>
+                            <ListItem>
+                                <Text textAlign="left">Send an email at info@techlahoma.org to the Techlahoma organizer team</Text>
+                            </ListItem>
+                        </OrderedList>
+                        <Text textAlign="left">Techlahoma leadership is here to support safe, fun, educational, professional and friendly events. If you or someone else needs help, don't hesitate to contact us. We can help you file a police report if that situation is needed, escort you to your vehicle, stay with you for the duration of an event, remove threatening/COC-violating individuals, refund your ticket, and more to help you feel recognized and accommodated. <b>It's our responsibility to take your safety concerns seriously.</b></Text>
+                    </AccordionPanel>
+                 </AccordionItem>
+                 <AccordionItem>
+                 <h2>
+                        <AccordionButton>
+                        <Box as='span' flex='1' textAlign='left'>
+                            Anti-Harassment Policy
+                        </Box>
+                        <AccordionIcon />
+                        </AccordionButton>
+                    </h2>
+                    <AccordionPanel pb={4}>
+                        <Text textAlign="left">
+                            Offensive comments related to gender, gender identity and expression, age, sexual orientation, race, religion, disability, body size, physical appearance, immigrant status or country of origin
+                            Sexual or otherwise inappropriate images and hateful speech/jokes (including in presentations)
+                            Deliberate intimidation, stalking, or following
+                            Harassing photography or recording
+                            Inappropriate or otherwise unwelcome physical contact or sexual attention (including unwanted hugs, touches or touching pregnant bellies)
+                            Sustained disruption of talks or events
+                            Harassing, abusive, discriminatory or derogatory conduct
+                        </Text>
+                    </AccordionPanel>
+                 </AccordionItem>
+                 <AccordionItem>
+                 <h2>
+                        <AccordionButton>
+                        <Box as='span' flex='1' textAlign='left'>
+                            Expectations for our Community (Everyone)
+                        </Box>
+                        <AccordionIcon />
+                        </AccordionButton>
+                    </h2>
+                    <AccordionPanel pb={4}>
+                        <Text textAlign="left">
+                            At all community and social events we expect everyone will:
+                            Be considerate, respectful, and collaborative
+                            Refrain from demeaning, discriminatory, or harassing behavior and speech
+                            Act and engage in an authentic, thoughtful, and empathetic way to help to foster our community
+                            Be mindful of your surroundings and of your fellow participants
+                            Alert meeting organizers and volunteers if you notice CoC violations, someone in distress or a dangerous situation
+                        </Text>
+                    </AccordionPanel>
+                 </AccordionItem>
+                 <AccordionItem>
+                 <h2>
+                        <AccordionButton>
+                        <Box as='span' flex='1' textAlign='left'>
+                            Expectations for our Organizers
+                        </Box>
+                        <AccordionIcon />
+                        </AccordionButton>
+                    </h2>
+                    <AccordionPanel pb={4}>
+                        <Text textAlign="left">
+                            Event organizers will:<br></br>
+                            <br></br>Uphold the CoC and be excellent examples of personal and professional conduct
+                            <br></br>Attempt to prevent potential CoC violations and keep vigilant in watching for persons in need of help
+                            <br></br>Contact local law enforcement or venue security
+                            <br></br>Provide escorts to anyone requesting safety and security
+                            <br></br>Assist those experiencing harassment to feel safe for the duration of the event
+                            <br></br>The event organizers will take appropriate action against unacceptable behavior. Organizers may expel participants from the event without warning or refund.
+                        </Text>
+                    </AccordionPanel>
+                 </AccordionItem>
+                 <AccordionItem>
+                 <h2>
+                        <AccordionButton>
+                        <Box as='span' flex='1' textAlign='left'>
+                            Expectations for our Sponsors
+                        </Box>
+                        <AccordionIcon />
+                        </AccordionButton>
+                    </h2>
+                    <AccordionPanel pb={4}>
+                        <Text textAlign="left">
+                            Sponsors (otherwise known as vendors, booth staff) and other staff are subject to the anti-harassment policy. Sponsors and staff agree to the following:
+                            No Inappropriate and offensive material
+                            No sexualized images or activities
+                            No sexualized clothing/uniforms/costumes
+                     </Text>
+                    </AccordionPanel>
+                 </AccordionItem>
+                 <AccordionItem>
+                    <h2>
+                        <AccordionButton>
+                        <Box as='span' flex='1' textAlign='left'>
+                            Alcohol Policy
+                        </Box>
+                        <AccordionIcon />
+                        </AccordionButton>
+                    </h2>
+                    <AccordionPanel pb={4}>
+                        <Text textAlign="left">Alcohol will only be paid for/provided by Techlahoma at Techlahoma board organized events.
+                           <br></br> User groups may have alcohol at events, but: <br></br> 
+                        </Text>
+                        <OrderedList>
+                            <ListItem>
+                                <Text textAlign="left">alcohol may not be purchased with Techlahoma funds</Text>
+                            </ListItem>
+                            <ListItem>
+                                <Text textAlign="left">a sponsor can be used to pay for alcohol</Text>
+                            </ListItem>
+                            <ListItem>
+                                <Text textAlign="left">all meetups with alcohol must be held at locations licensed to serve alcohol with a licensed bartender, such as a brewery or coffee/wine bar</Text>
+                            </ListItem>
+                            <ListItem>
+                                <Text textAlign="left">all rules and regulations in accordance with local, state, and federal laws must be followed</Text>
+                            </ListItem>
+                        </OrderedList>
+                    </AccordionPanel>
+                </AccordionItem>
+            </Accordion>
             
         </Container>
     )
