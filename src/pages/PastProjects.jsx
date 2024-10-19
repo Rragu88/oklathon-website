@@ -7,12 +7,19 @@ import {
     AccordionIcon,
     Box,
   } from '@chakra-ui/react'
+import { Heading } from '@chakra-ui/react'
+import { Flex, Spacer } from '@chakra-ui/react'
+
+
 
 
 const PastProjects = () => {
   return (
+
+    <Flex width={"100vw"} height={"100vh"}>
     <div>
-        <Accordion>
+        <Heading>Past Projects</Heading>
+        <Accordion defaultIndex={[0]} allowMultiple>
   <AccordionItem>
     <h2>
       <AccordionButton>
@@ -49,12 +56,67 @@ const PastProjects = () => {
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
+    <Box as='ul' flex='1' textAlign='left'>
+            <li><a href='https://github.com/techlahoma/thunderplains-2023'>ThunderPlains 2023</a></li>
 
+        </Box>
     </AccordionPanel>
   </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as='span' flex='1' textAlign='left'>
+          2022 Projects
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+        <Box as='ul' flex='1' textAlign='left'>
+
+        </Box>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as='span' flex='1' textAlign='left'>
+          2021 Projects
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+        <Box as='ul' flex='1' textAlign='left'>
+
+        </Box>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as='span' flex='1' textAlign='left'>
+          2020 Projects
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+        <Box as='ul' flex='1' textAlign='left'>
+
+        </Box>
+    </AccordionPanel>
+  </AccordionItem>
+
 </Accordion>
+
+
       
     </div>
+    </Flex>
   )
 }
 
