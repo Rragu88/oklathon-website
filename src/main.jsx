@@ -13,10 +13,6 @@ import { Resources } from './pages/Resources.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
-  },
-  {
-    path: "/about",
     element: <AboutPage/>,
   },
   {
