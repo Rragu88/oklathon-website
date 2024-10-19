@@ -29,9 +29,8 @@ export const Resources=() => {
         justifyContent="flex-start"
         flexDir="column"
         >
-            <h1>
-                Resources Page
-            </h1>
+            <Text fontFamily="'Poppins', sans-serif" fontWeight="800" color='#b5e853' fontSize='9xl'  fontStyle='italic'>Resources
+            </Text>
             <h3>
                 Oklathon supports coders of all skill levels! Need to polish your skills ahead of the event? Here are some links to get you started. 
             </h3>
