@@ -17,16 +17,14 @@ export const Resources=() => {
                 Basic Resources Page
             </h1>
             <h3>
-                More explaination as to what is going on here
+                Oklathon supports coders of all skill levels! Need to polish your skills ahead of the event? Here are some links to get you started. 
             </h3>
-            <h4>
-                Here are some basic links to get you started
-            </h4>
             <Tabs>
                 <TabList>
                     <Tab>FreeCodeCamp</Tab>
                     <Tab>Udemy</Tab>
                     <Tab>GitHub</Tab>
+                    <Tab>Beginner Collections</Tab>
                 </TabList>
                 <TabPanels>
                     <TabPanel>
@@ -58,11 +56,33 @@ export const Resources=() => {
                         <p>Click <Link href="https://github.com" color="teal.500" target="_blank">here</Link> to get started</p>
                         <ul>
                             <li>
-                                
+                                <Link href="https://pages.github.com/" color="teal.500" target="_blank">GitHub Pages</Link>
+                            </li>
+                            <li>
+                                <Link href="https://learngitbranching.js.org/" color="teal.500" target="_blank">Learn Git Branching</Link>
+                            </li>
+                            <li>
+                                <Link href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request" color="teal.500" target="_blank">Learn Pull Requests</Link>
+                            </li>
+                            <li>
+                                <Link href="https://github.com/firstcontributions/first-contributions" color="teal.500" target="_blank">First Contributions</Link>
                             </li>
                         </ul>
                     </TabPanel>
-
+                    <TabPanel>
+                        <p>Follow these links for curated starting points</p>
+                        <ul>
+                            <li>
+                                <Link href="https://github.com/MunGell/awesome-for-beginners" color="teal.500" target="_blank">Awesome for beginners</Link>
+                            </li>
+                            <li>
+                                <Link href="https://goodfirstissue.dev/" color="teal.500" target="_blank">First issues for beginners</Link>
+                            </li>
+                            <li>
+                                <Link href="https://up-for-grabs.net/" color="teal.500" target="_blank">Up for grabs issues</Link>
+                            </li>
+                        </ul>
+                    </TabPanel>
                 </TabPanels>
             </Tabs>
             
