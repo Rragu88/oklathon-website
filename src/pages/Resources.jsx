@@ -249,7 +249,6 @@ export const Resources=() => {
                     </AccordionPanel>
                 </AccordionItem>
             </Accordion>
-            
         </Container>
     )
 }
