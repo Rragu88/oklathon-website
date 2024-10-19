@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, CardHeader, Image } from '@chakra-ui/react'
+import { Card, CardBody, CardHeader, Grid, Image } from '@chakra-ui/react'
 
 function SponsorCard({title, imageSrc, text, url}) {
   return (
@@ -9,12 +9,14 @@ function SponsorCard({title, imageSrc, text, url}) {
                 <h2>{title}</h2>
             </CardHeader>
             <CardBody>
-                <Image 
-                src={imageSrc} 
-                alt={title}
-                boxSize={200}
-                />
-                <div>{text}</div>
+                <Grid gap={2} autoFlow="column dense">
+                    <Image 
+                    src={imageSrc} 
+                    alt={title}
+                    boxSize={200}
+                    />
+                    <div>{text}</div>
+                </Grid>
             </CardBody>
         </Card>
     </a>

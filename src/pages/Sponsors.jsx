@@ -18,13 +18,13 @@ export const SponsorsPage = () => {
         title={'Techlahoma'}
         imageSrc={techlahomaLogo}
         url={'https://www.techlahoma.org/'}
-        text={'a professional network of more than 5,000 information technology workers, hobbyists, students, teachers, and future technologists.'}
+        text={'A professional network of more than 5,000 information technology workers, hobbyists, students, teachers, and future technologists.'}
       />
         <SponsorCard
           title={'IMMY'}
           imageSrc={immyLogo}
           url={'https://immy.com/'}
-          text={'a rapidly growing in-vitro diagnostic manufacturer and global leader in fungal diseases, providing diagnostic solutions and products to over 80 countries to enhance patient care and therapy.'}
+          text={'A rapidly growing in-vitro diagnostic manufacturer and global leader in fungal diseases, providing diagnostic solutions and products to over 80 countries to enhance patient care and therapy.'}
         />
       <SponsorCard 
         title={'Filebase'} 
