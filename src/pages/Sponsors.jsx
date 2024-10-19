@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Container, Modal, useDisclosure, ModalOverlay, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader } from '@chakra-ui/react'
+import { Button, Container, Modal, useDisclosure, ModalOverlay, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, Text } from '@chakra-ui/react'
 import SponsorCard from '../components/SponsorCard'
 import techlahomaLogo from '../assets/sponsor-techlahoma.png'
 import filebaseLogo from '../assets/filebase.svg'
@@ -11,7 +11,7 @@ export const SponsorsPage = () => {
 
   return (
     <>
-      <h1>Sponsors</h1>
+      <Text fontSize={64} color={'#b5e853'} mb={5}>Sponsors</Text>
       <Container width={"200%"}>
 
       <SponsorCard
