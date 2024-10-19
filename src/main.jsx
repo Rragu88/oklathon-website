@@ -9,6 +9,7 @@ import {
 import { AboutPage } from './pages/About.jsx';
 import { ChakraProvider } from '@chakra-ui/react';
 import { Resources } from './pages/Resources.jsx';
+import { SponsorsPage } from './pages/Sponsors.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,11 @@ const router = createBrowserRouter([
   {
     path: "/resources",
     element: <Resources/>
-  }
+  },
+  {
+    path: '/sponsors',
+    element: <SponsorsPage/>
+  },
 ]);
 
 createRoot(document.getElementById('root')).render(
