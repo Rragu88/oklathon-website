@@ -12,12 +12,8 @@ import { ChakraProvider } from '@chakra-ui/react';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
-  },
-  {
-    path: "/about",
     element: <AboutPage/>,
-  },
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
