@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import '../App.css'
-import { ChakraProvider } from '@chakra-ui/react'
 import {
     Accordion,
     AccordionItem,
     AccordionButton,
     AccordionPanel,
     AccordionIcon,
+    Container,
   } from '@chakra-ui/react'
 
 export const Resources=() => {
