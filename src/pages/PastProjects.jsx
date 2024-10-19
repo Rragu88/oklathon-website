@@ -74,7 +74,8 @@ const PastProjects = () => {
     </h2>
     <AccordionPanel pb={4}>
         <Box as='ul' flex='1' textAlign='left'>
-
+        <li><a href='https://github.com/techlahoma/thunderplains-2022'>ThunderPlains 2022</a></li>
+        <li><a href='https://github.com/techlahoma/Hacktoberfest'>Hacktoberfest</a></li>
         </Box>
     </AccordionPanel>
   </AccordionItem>
@@ -90,7 +91,7 @@ const PastProjects = () => {
     </h2>
     <AccordionPanel pb={4}>
         <Box as='ul' flex='1' textAlign='left'>
-
+        <li><a href='https://github.com/techlahoma/thunderplains-2021'>ThunderPlains 2021</a></li>
         </Box>
     </AccordionPanel>
   </AccordionItem>
@@ -106,7 +107,8 @@ const PastProjects = () => {
     </h2>
     <AccordionPanel pb={4}>
         <Box as='ul' flex='1' textAlign='left'>
-
+        <li><a href='https://github.com/techlahoma/thunderplains-2020'>ThunderPlains 2020</a></li>
+        <li><a href='https://github.com/techlahoma/techlahoma_donations'>Techlahoma Donations App</a></li>
         </Box>
     </AccordionPanel>
   </AccordionItem>
