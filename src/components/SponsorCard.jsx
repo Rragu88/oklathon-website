@@ -1,15 +1,19 @@
 import React from 'react'
-import { Card, CardBody, CardHeader } from '@chakra-ui/react'
+import { Card, CardBody, CardHeader, Image } from '@chakra-ui/react'
 
 function SponsorCard({title, imageSrc, text, url}) {
   return (
     <a href={url}>
-        <Card>
+        <Card mb={2}>
             <CardHeader>
                 <h2>{title}</h2>
             </CardHeader>
             <CardBody>
-                <img src={imageSrc}></img>
+                <Image 
+                src={imageSrc} 
+                alt={title}
+                boxSize={200}
+                />
                 <div>{text}</div>
             </CardBody>
         </Card>

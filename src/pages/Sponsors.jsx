@@ -12,6 +12,8 @@ export const SponsorsPage = () => {
   return (
     <>
       <h1>Sponsors</h1>
+      <Container width={"200%"}>
+
       <SponsorCard
         title={'Techlahoma'}
         imageSrc={techlahomaLogo}
@@ -30,6 +32,7 @@ export const SponsorsPage = () => {
         url={'https://filebase.com/'}
         text={'The InterPlanetary Development Platform. From IPFS pinning to dedicated IPFS gateways and IPNS names, Filebase provides all the tools you need to build the best decentralized applications.'}
       />
+      </Container>
       <Button onClick={onOpen}>
         Become A Sponsor
       </Button>
