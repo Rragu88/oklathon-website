@@ -10,19 +10,23 @@ import {
     Link,
     List,
     ListItem,
-    UnorderedList
+    UnorderedList,
   } from '@chakra-ui/react'
 
 export const Resources=() => {
     return (
-        <Container>
+        <Container
+        // maxW="1100px" 
+        display="flex"
+        justifyContent="flex-start"
+        flexDir="column"
+        >
             <h1>
                 Basic Resources Page
             </h1>
             <h3>
                 Oklathon supports coders of all skill levels! Need to polish your skills ahead of the event? Here are some links to get you started. 
             </h3>
-            
             <Tabs>
                 <TabList>
                     <Tab>FreeCodeCamp</Tab>
@@ -30,7 +34,7 @@ export const Resources=() => {
                     <Tab>GitHub</Tab>
                     <Tab>Beginner Collections</Tab>
                 </TabList>
-                <TabPanels>
+                <TabPanels display="flex" justifyContent="flex-start">
                     <TabPanel>
                         <p>Click <Link href="freecodecamp.org" color="teal.500" target="_blank">here</Link> to get started</p>
                         <UnorderedList>
@@ -74,7 +78,7 @@ export const Resources=() => {
                         </UnorderedList>
                     </TabPanel>
                     <TabPanel>
-                        <p>Follow these links for curated starting points</p>
+                        <p>Curated Collections</p>
                         <UnorderedList>
                             <ListItem>
                                 <Link href="https://github.com/MunGell/awesome-for-beginners" color="teal.500" target="_blank">Awesome for beginners</Link>
