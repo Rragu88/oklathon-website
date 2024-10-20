@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { AboutPage } from './pages/About.jsx';
 import { ChakraProvider } from '@chakra-ui/react';
+import { SponsorsPage } from './pages/Sponsors.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     path: "/about",
     element: <AboutPage/>,
   },
+  {
+    path: '/sponsors',
+    element: <SponsorsPage/>
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
